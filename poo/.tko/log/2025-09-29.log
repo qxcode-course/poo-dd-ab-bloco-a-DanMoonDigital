@@ -1,0 +1,9 @@
+2025-09-29 14:49:28, SELF, v:1, k:toalha, rate:70, guide:_, alone:6
+2025-09-29 14:50:34, MOVE, v:1, k:toalha, mode:DOWN
+2025-09-29 14:51:18, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 14:53:03, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 14:53:04, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:5
+2025-09-29 14:53:05, MOVE, v:1, k:toalha, mode:BACK
+2025-09-29 14:53:42, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 14:53:43, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:7
+2025-09-29 14:53:43, MOVE, v:1, k:toalha, mode:BACK

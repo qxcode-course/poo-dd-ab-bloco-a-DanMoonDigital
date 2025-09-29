@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-29_14-53-04",
+            "content": "@@ -149,82 +149,4 @@\n  = 0\n-%0A%0A# print(%22Ol%C3%A1, testando novamente por que a ultima pasta deu tudo errado :D%22)\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-09-29_14-53-43",
+            "content": "class Towel: \n    def __init__(self, color: str, size: str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\n# print(\"Ol\u00e1, testando novamente por que a ultima pasta deu tudo errado :D\")",
+            "lines": "7"
+        }
+    ]
+}
