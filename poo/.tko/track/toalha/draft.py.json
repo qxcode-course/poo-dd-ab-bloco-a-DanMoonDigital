@@ -7,8 +7,18 @@
         },
         {
             "label": "2025-09-29_14-53-43",
-            "content": "class Towel: \n    def __init__(self, color: str, size: str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\n# print(\"Ol\u00e1, testando novamente por que a ultima pasta deu tudo errado :D\")",
+            "content": "@@ -151,201 +151,80 @@\n  0%0A%0A\n-    def dry(self, amount: int):%0A        self.wetness += amount%0A        if self.wetness %3E self.getMaxWetness():%0A            print(%22Toalha enchargada%22)%0A            self.wetness = self.getMaxWetness(\n+# print(%22Ol%C3%A1, testando novamente por que a ultima pasta deu tudo errado :D%22\n )\n",
             "lines": "7"
+        },
+        {
+            "label": "2025-09-29_15-22-55",
+            "content": "@@ -348,262 +348,4 @@\n ss()\n-%0A%0A    def wrintOut(self):%0A        self.wetness = 0%0A%0A    def getMaxWetness(self) -%3E int:%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20 %0A        if self.size == %22G%22:%0A            return 30%0A        return 0\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-09-29_15-26-44",
+            "content": "class Towel: \n    def __init__(self, color: str, size: str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\n    def dry(self, amount: int):\n        self.wetness += amount\n        if self.wetness > self.getMaxWetness():\n            print(\"Toalha enchargada\")\n            self.wetness = self.getMaxWetness()\n\n    def wrintOut(self):\n        self.wetness = 0\n\n    def getMaxWetness(self) -> int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\":\n            return 20 \n        if self.size == \"G\":\n            return 30\n        return 0",
+            "lines": "23"
         }
     ]
 }
