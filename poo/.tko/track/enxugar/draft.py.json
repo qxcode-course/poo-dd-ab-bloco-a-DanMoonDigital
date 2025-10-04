@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-04_14-39-04",
+            "content": "@@ -219,25 +219,25 @@\n      if self\n-.\n+ \n wetness %3E se\n@@ -259,91 +259,4 @@\n s():\n-%0A            print(%22Toalha encharcada%22)%0A            self.wetness = self.getMaxWetness()\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-04_14-40-00",
+            "content": "@@ -346,67 +346,4 @@\n ss()\n-%0A    %0A    def wringOut(self):%0A        self.wetness = 0%0A        \n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-10-04_14-43-21",
+            "content": "@@ -405,210 +405,8 @@\n     \n-%0A\n     \n-def getMaxWetness(self) -%3E int:%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20%0A        if self.size == %22G%22:%0A            return 30%0A        return 0\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-04_14-44-23",
+            "content": "@@ -215,10 +215,400 @@\n %0A   \n-%0A    %0A\n+     if self.wetness %3E self.getMaxWetness():%0A            print(%22Toalha encharcada%22)%0A            self.wetness = self.getMaxWetness()%0A    %0A    def wringOut(self):%0A        self.wetness = 0%0A    %0A    def getMaxWetness(self) -%3E int:%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20%0A        if self.size == %22G%22:%0A            return 30%0A        return 0\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-04_15-04-11",
+            "content": "@@ -215,48 +215,10 @@\n %0A   \n- \n+%0A\n     \n-if self.wetness %3E self.getMaxWetness():\n+%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-04_15-17-05",
+            "content": "@@ -259,142 +259,4 @@\n s():\n-%0A            print(%22Toalha encharcada%22)%0A            self.wetness = self.getMaxWetness()%0A%0A    def writngOut(self):%0A        self.wetness = 0\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-04_15-19-28",
+            "content": "@@ -397,210 +397,4 @@\n  = 0\n-%0A%0A    def getMaxWetness(self) -%3E int:%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20%0A        if self.size ==%22G%22:%0A            return 30%0A        return 0\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-04_15-20-57",
+            "content": "@@ -603,270 +603,4 @@\n rn 0\n-%0A    %0A    def _str__(self) -%3E str:%0A        return f%22Cor:%7Bself.color%7D, Tam: %7Bself.size%7D%22, Umidade: %7Bself.wetness%7D%22%0A%0Adef main():%0A    toalha = towel(%22%22, %22%22)%0A    while True:%0A        print(%22$%22, end=%22%22)%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)\n",
+            "lines": "23"
+        }
+    ]
+}
