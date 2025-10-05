@@ -23,11 +23,26 @@ class Towel:
         return 0
     
     def _str__(self) -> str:
-        return f"Cor:{self.color}, Tam: {self.size}", Umidade: {self.wetness}"
+        return f"Cor:{self.color}, Tam:{self.size}, Umidade:{self.wetness}"
 
 def main():
-    toalha = towel("", "")
+    toalha = Towel("", "")
     while True:
         print("$", end="")
         line: str = input()
         args: list[str] = line.split(" ")
+
+        if args[0] == "end":
+            break
+        elif args [0] == "new":
+            color = args [1]
+            size = args [2]
+            toalha = Towel(color, size)
+        elif args [0] == "show":
+            print(toalha)
+        elif args [0] == "dry":
+            amount = int(args[1])
+            toalha.dry(amount)
+        else:
+            print("fail: comando desconhecido")
+main()
