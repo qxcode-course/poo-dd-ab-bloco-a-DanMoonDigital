@@ -1,17 +1,20 @@
 class Towel:
-    def __int__(self, color: str, size: str):
+    def __init__(self, color: str, size: str):
         self.color: str = color
         self.size: str = size
         self.wetness: int = 0
 
     def dry(self, amount: int):
         self.wetness += amount
-        if self.wetness > self.getMaxWetness():
-            print("Toalha encharcada")
+        if self.wetness >= self.getMaxWetness():
+            print("toalha encharcada")
             self.wetness = self.getMaxWetness()
 
     def writngOut(self):
         self.wetness = 0
+
+    def isDry(self) -> bool:
+        return self.wetness == 0
 
     def getMaxWetness(self) -> int:
         if self.size == "P":
@@ -22,27 +25,32 @@ class Towel:
             return 30
         return 0
     
-    def _str__(self) -> str:
-        return f"Cor:{self.color}, Tam:{self.size}, Umidade:{self.wetness}"
+    def __str__(self) -> str:
+        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
 
 def main():
     toalha = Towel("", "")
     while True:
-        print("$", end="")
         line: str = input()
-        args: list[str] = line.split(" ")
-
+        print("$" + line)
+        args: list [str] = line.split(" ")
+        
         if args[0] == "end":
             break
-        elif args [0] == "new":
-            color = args [1]
+        elif args[0] == "criar":
+            color = args[1]
             size = args [2]
-            toalha = Towel(color, size)
-        elif args [0] == "show":
+            toalha = Towel(color,size)
+        elif args[0] == "mostrar":
             print(toalha)
-        elif args [0] == "dry":
-            amount = int(args[1])
+        elif args[0] == "enxugar":
+            amount = int(args [1])
             toalha.dry(amount)
+        elif args[0] == "seca":
+            print("sim" if toalha.isDry() else "nao")
+        elif args[0] == "torcer":
+            toalha.writngOut()
         else:
             print("fail: comando desconhecido")
+
 main()
