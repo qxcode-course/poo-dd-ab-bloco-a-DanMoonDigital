@@ -10,8 +10,10 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  toalha: '{rate:70, guide:_, alone:6}'
-  animal: '{iagen:_, alone:5}'
+  toalha: '{rate:70, guide:_, alone:7, study:90}'
+  animal: '{iagen:_, alone:4, study:40}'
+  carro: '{alone:2}'
+  calculadora: '{alone:1}'
   enxugar: '{rate:100, iagen:_, guide:_, alone:6, study:60}'
 flags:
   quests: 0
@@ -19,4 +21,4 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+index: calculadora
