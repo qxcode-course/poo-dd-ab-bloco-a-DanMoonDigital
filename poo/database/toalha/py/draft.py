@@ -21,11 +21,13 @@ class Towel:
         if self.size =="G":
             return 30
         return 0
-    
-    def wringOut(self):
 
     def __str__(self) -> str:
-        return f"Cor:{self.color}, Tam:{self.size}, Umidade:{self.wetness}
+        return f"Cor:{self.color}, Tam:{self.size}, Umidade:{self.wetness}"
+    
+azul = Towel("blue", "G")
+print(azul.size == "G")
+print()
 
 def main():
     toalha = Towel("", "")
@@ -49,3 +51,6 @@ def main():
             print("fail: comando desconhecido")
 
 main()
+
+
+

@@ -1,0 +1,184 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-05_20-29-26",
+            "content": "@@ -1,157 +1 @@\n-class Animal:%0A    def __int__(self, species: str, sound: str):%0A        self. species: str = species%0A        self.sound: str = sound%0A        self.age: int = 0\n+%0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-10-05_20-31-37",
+            "content": "@@ -154,160 +154,4 @@\n  = 0\n-%0A    %0A    def ageBy(self, increment: int):%0A        self.age += increment%0A        if self.age %3E=4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A    %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-05_20-34-59",
+            "content": "@@ -310,338 +310,4 @@\n    %0A\n-    def makeSoud(self):%0A        if self.sound == %220%22:%0A            return %22---%22%0A        if self.sound == %221%22:%0A            return self.sound%0A        if self.sound == %222%22:%0A            return self.sound%0A        if self.sound == %223%22:%0A            return self.sound%0A        if self.sound == %224%22:%0A            return %22RIP%22%0A        return %22---%22\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-10-05_20-37-09",
+            "content": "@@ -644,198 +644,4 @@\n ---%22\n-%0A    %0A    def main():%0A        animal = Animal(%22%22, %22%22)%0A        while True:%0A            line: str = input()%0A            print(%22$%22 + line)%0A            args: list%5Bstr%5D = line.split(%22 %22)%0A            \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-05_20-40-02",
+            "content": "@@ -822,17 +822,16 @@\n it(%22 %22)%0A\n-%0A\n         \n@@ -838,94 +838,4 @@\n     \n-if args %5B0%5D == %22end%22:%0A                break%0A        elif args %5B0%5D == %22init%22:%0A            %0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-05_20-42-22",
+            "content": "@@ -887,20 +887,16 @@\n         \n-    \n elif arg\n@@ -928,88 +928,5 @@\n     \n-if len(args) %3C 3:%0A                print(%22fail: uso correto -%3E init %3Cespecie%3E %3Csom%3E%22)\n+%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-05_20-43-26",
+            "content": "@@ -19,17 +19,16 @@\n def __in\n-i\n t__(self\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-05_20-43-34",
+            "content": "@@ -1017,267 +1017,4 @@\n m%3E%22)\n-%0A                continue%0A            species = args %5B1%5D%0A            sound = args %5B2%5D%0A            animal = Animal(species, sound)%0A%0A            elif args %5B0%5D == %22show%22:%0A                print(animal)%0A            %0A            elif args%5B0%5D == %22grow%22:%0A                \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-05_20-46-54",
+            "content": "@@ -1280,255 +1280,4 @@\n     \n-if len(args) %3C 2:%0A                print(%22fail: uso correto -%3E grow %3Cincremento%3E%22)%0A                continue%0A            increment = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0Amain()%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-05_20-48-51",
+            "content": "@@ -647,16 +647,20 @@\n -%22%0A    %0A\n+    \n def main\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-05_20-51-28",
+            "content": "@@ -66,24 +66,25 @@\n        self.\n+ \n species: str\n@@ -94,16 +94,16 @@\n species%0A\n-\n         \n@@ -322,17 +322,16 @@\n  makeSou\n-n\n d(self):\n@@ -621,16 +621,16 @@\n n %22RIP%22%0A\n+\n         \n@@ -651,117 +651,8 @@\n    %0A\n-    def __str__(self):%0A        return f%22species:%7Bself.species%7D, Age:%7Bself.age%7D, Sound:%7Bself.makeSoUND%7D%22%0A    %0A\n def \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-05_20-53-20",
+            "content": "@@ -1,1605 +1,4329 @@\n-class Animal:%0A    def __init__(self, species: str, sound: str):%0A        self.species: str = species%0A        self.sound: str = sound%0A        self.age: int = 0%0A    %0A    def ageBy(self, increment: int):%0A        self.age += increment%0A        if self.age %3E=4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A    %0A    def makeSound(self):%0A        if self.sound == %220%22:%0A            return %22---%22%0A        if self.sound == %221%22:%0A            return self.sound%0A        if self.sound == %222%22:%0A            return self.sound%0A        if self.sound == %223%22:%0A            return self.sound%0A        if self.sound == %224%22:%0A            return %22RIP%22%0A        return %22---%22%0A    %0A    def __str__(self):%0A        return f%22species:%7Bself.species%7D, Age:%7Bself.age%7D, Sound:%7Bself.makeSound%7D%22%0A    %0Adef main():  # fora da classe!%0A    animal = Animal(%22%22, %22%22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        elif args%5B0%5D == %22init%22:%0A            if len(args) %3C 3:%0A                print(%22fail: uso correto -%3E init %3Cespecie%3E %3Csom%3E%22)%0A                continue%0A            species = args%5B1%5D%0A            sound = args%5B2%5D%0A            animal = Animal(species, sound)%0A%0A        elif args%5B0%5D == %22show%22:%0A            print(animal)%0A            %0A        elif args%5B0%5D == %22grow%22:%0A            if len(args) %3C 2:%0A                print(%22fail: uso correto -%3E grow %3Cincremento%3E%22)%0A                continue%0A            increment = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0Amain()\n+@@ -1,8 +1,29 @@%0A+@@ -1,1639 +1,60 @@%250A-%0A class An%0A@@ -27,17 +27,19 @@%0A  Animal:%0A-%250A%0A+%25250A%0A     def %0A@@ -79,17 +79,19 @@%0A d: str):%0A-%250A%0A+%25250A%0A         %0A@@ -117,17 +117,19 @@%0A  species%0A-%250A%0A+%25250A%0A         %0A@@ -147,25 +147,27 @@%0A  str = sound%0A-%250A%0A+%25250A%0A         self%0A@@ -179,22 +179,26 @@%0A  int = 0%0A-%250A%0A+%25250A%0A     %0A-%250A%0A+%25250A%0A     def %0A@@ -225,17 +225,19 @@%0A t: int):%0A-%250A%0A+%25250A%0A         %0A@@ -257,17 +257,19 @@%0A ncrement%0A-%250A%0A+%25250A%0A         %0A@@ -284,13 +284,17 @@%0A age %0A-%253E=4:%250A%0A+%25253E=4:%25250A%0A     %0A@@ -308,17 +308,19 @@%0A  print(f%0A-%2522%0A+%252522%0A warning:%0A@@ -320,17 +320,19 @@%0A arning: %0A-%257B%0A+%25257B%0A self.spe%0A@@ -339,24 +339,32 @@%0A cies%0A-%257D%0A+%25257D%0A  morreu%0A-%2522)%250A%0A+%252522)%25250A%0A     %0A-%250A%0A+%25250A%0A     %0A@@ -379,25 +379,27 @@%0A Sound(self):%0A-%250A%0A+%25250A%0A         if s%0A@@ -415,13 +415,19 @@%0A  == %0A-%25220%2522:%250A%0A+%2525220%252522:%25250A%0A     %0A@@ -437,30 +437,36 @@%0A      return %0A-%2522---%2522%250A%0A+%252522---%252522%25250A%0A         if s%0A@@ -482,13 +482,19 @@%0A  == %0A-%25221%2522:%250A%0A+%2525221%252522:%25250A%0A     %0A@@ -510,33 +510,35 @@%0A eturn self.sound%0A-%250A%0A+%25250A%0A         if self.%0A@@ -550,13 +550,19 @@%0A  == %0A-%25222%2522:%250A%0A+%2525222%252522:%25250A%0A     %0A@@ -578,33 +578,35 @@%0A eturn self.sound%0A-%250A%0A+%25250A%0A         if self.%0A@@ -618,13 +618,19 @@%0A  == %0A-%25223%2522:%250A%0A+%2525223%252522:%25250A%0A     %0A@@ -654,17 +654,19 @@%0A lf.sound%0A-%250A%0A+%25250A%0A         %0A@@ -686,13 +686,19 @@%0A  == %0A-%25224%2522:%250A%0A+%2525224%252522:%25250A%0A     %0A@@ -716,14 +716,20 @@%0A urn %0A-%2522RIP%2522%250A%0A+%252522RIP%252522%25250A%0A     %0A@@ -743,19 +743,27 @@%0A urn %0A-%2522---%2522%250A%0A+%252522---%252522%25250A%0A     %0A-%250A%0A+%25250A%0A     %0A@@ -780,17 +780,19 @@%0A _(self):%0A-%250A%0A+%25250A%0A         %0A@@ -803,17 +803,19 @@%0A rn f%0A-%2522%0A+%252522%0A species:%0A %257Bsel%0A@@ -810,17 +810,19 @@%0A species:%0A-%257B%0A+%25257B%0A self.spe%0A@@ -829,24 +829,28 @@%0A cies%0A-%257D%0A+%25257D%0A , Age:%0A-%257B%0A+%25257B%0A self.age%0A %257D, S%0A@@ -849,17 +849,19 @@%0A .age%0A-%257D%0A+%25257D%0A , Sound:%0A %257Bsel%0A@@ -860,9 +860,11 @@%0A und:%0A-%257B%0A+%25257B%0A self%0A@@ -877,16 +877,24 @@%0A ound%0A-%257D%2522%250A%0A+%25257D%252522%25250A%0A     %0A-%250A%0A+%25250A%0A def %0A@@ -900,17 +900,19 @@%0A  main():%0A-%250A%0A+%25250A%0A         %0A@@ -931,16 +931,26 @@%0A mal(%0A-%2522%2522, %2522%2522)%250A%0A+%252522%252522, %252522%252522)%25250A%0A     %0A@@ -964,17 +964,19 @@%0A le True:%0A-%250A%0A+%25250A%0A         %0A@@ -998,17 +998,19 @@%0A  input()%0A-%250A%0A+%25250A%0A         %0A@@ -1023,19 +1023,23 @@%0A int(%0A-%2522$%2522%0A+%252522$%252522%0A  + line)%0A %250A   %0A@@ -1034,17 +1034,19 @@%0A  + line)%0A-%250A%0A+%25250A%0A         %0A@@ -1063,13 +1063,17 @@%0A list%0A-%255Bstr%255D%0A+%25255Bstr%25255D%0A  = l%0A@@ -1086,14 +1086,22 @@%0A lit(%0A-%2522 %2522)%250A%250A%0A+%252522 %252522)%25250A%25250A%0A     %0A@@ -1120,22 +1120,32 @@%0A rgs %0A-%255B0%255D == %2522end%2522:%250A%0A+%25255B0%25255D == %252522end%252522:%25250A%0A     %0A@@ -1161,17 +1161,19 @@%0A    break%0A-%250A%0A+%25250A%0A         %0A@@ -1190,23 +1190,33 @@%0A rgs %0A-%255B0%255D%0A+%25255B0%25255D%0A  == %0A-%2522%0A+%252522%0A init%0A-%2522:%250A%0A+%252522:%25250A%0A     %0A@@ -1240,13 +1240,17 @@%0A gs) %0A-%253C 3:%250A%0A+%25253C 3:%25250A%0A     %0A@@ -1259,33 +1259,35 @@%0A           print(%0A-%2522%0A+%252522%0A fail: uso corret%0A@@ -1293,33 +1293,47 @@%0A to -%0A-%253E%0A+%25253E%0A  init %0A-%253C%0A+%25253C%0A especie%0A-%253E %253Csom%253E%2522)%250A%0A+%25253E %25253Csom%25253E%252522)%25250A%0A     %0A@@ -1344,33 +1344,35 @@%0A         continue%0A-%250A%0A+%25250A%0A             spec%0A@@ -1386,12 +1386,18 @@%0A rgs %0A-%255B1%255D%250A%0A+%25255B1%25255D%25250A%0A     %0A@@ -1421,12 +1421,18 @@%0A rgs %0A-%255B2%255D%250A%0A+%25255B2%25255D%25250A%0A     %0A@@ -1470,18 +1470,22 @@%0A , sound)%0A-%250A%250A%0A+%25250A%25250A%0A         %0A@@ -1502,23 +1502,33 @@%0A rgs %0A-%255B0%255D%0A+%25255B0%25255D%0A  == %0A-%2522%0A+%252522%0A show%0A-%2522:%250A%0A+%252522:%25250A%0A     %0A@@ -1552,17 +1552,19 @@%0A (animal)%0A-%250A%0A+%25250A%0A         %0A@@ -1567,17 +1567,19 @@%0A         %0A-%250A%0A+%25250A%0A         %0A@@ -1595,23 +1595,33 @@%0A args%0A-%255B0%255D%0A+%25255B0%25255D%0A  == %0A-%2522%0A+%252522%0A grow%0A-%2522:%250A%0A+%252522:%25250A%0A     %0A@@ -1649,13 +1649,17 @@%0A gs) %0A-%253C 2:%250A%0A+%25253C 2:%25250A%0A     %0A@@ -1672,25 +1672,27 @@%0A       print(%0A-%2522%0A+%252522%0A fail: uso co%0A@@ -1702,16 +1702,20 @@%0A to -%0A-%253E%0A+%25253E%0A  grow %0A-%253C%0A+%25253C%0A incr%0A@@ -1724,12 +1724,18 @@%0A ento%0A-%253E%2522)%250A%0A+%25253E%252522)%25250A%0A     %0A@@ -1754,17 +1754,19 @@%0A continue%0A-%250A%0A+%25250A%0A         %0A@@ -1793,13 +1793,19 @@%0A args%0A-%255B1%255D)%250A%0A+%25255B1%25255D)%25250A%0A     %0A@@ -1835,18 +1835,22 @@%0A crement)%0A-%250A%250A%0A+%25250A%25250A%0A         %0A@@ -1854,17 +1854,19 @@%0A    else:%0A-%250A%0A+%25250A%0A         %0A@@ -1875,17 +1875,19 @@%0A   print(%0A-%2522%0A+%252522%0A fail: co%0A@@ -1908,15 +1908,103 @@%0A cido%0A-%2522)%250A%250Amain()%0A+%252522)%25250A%25250Amain()%250A+@@ -745,19 +745,19 @@%25250A f.makeSo%25250A-und%25250A+UND%25250A %2525257D%25252522%2525250A    %2525250A%250A %25250A%0A %250A%0A\n",
+            "lines": "362"
+        },
+        {
+            "label": "2025-10-05_20-53-54",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,959 +1,347 @@%0A-\n class An\n@@ -27,17 +27,19 @@\n  Animal:\n-%0A\n+%250A\n     def \n@@ -79,17 +79,19 @@\n d: str):\n-%0A\n+%250A\n         \n@@ -117,17 +117,19 @@\n  species\n-%0A\n+%250A\n         \n@@ -147,25 +147,27 @@\n  str = sound\n-%0A\n+%250A\n         self\n@@ -179,22 +179,26 @@\n  int = 0\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     def \n@@ -225,17 +225,19 @@\n t: int):\n-%0A\n+%250A\n         \n@@ -257,17 +257,19 @@\n ncrement\n-%0A\n+%250A\n         \n@@ -284,13 +284,17 @@\n age \n-%3E=4:%0A\n+%253E=4:%250A\n     \n@@ -308,17 +308,19 @@\n  print(f\n-%22\n+%2522\n warning:\n@@ -320,17 +320,19 @@\n arning: \n-%7B\n+%257B\n self.spe\n@@ -339,24 +339,32 @@\n cies\n-%7D\n+%257D\n  morreu\n-%22)%0A\n+%2522)%250A\n     \n-%0A\n+%250A\n     \n@@ -379,25 +379,27 @@\n Sound(self):\n-%0A\n+%250A\n         if s\n@@ -415,13 +415,19 @@\n  == \n-%220%22:%0A\n+%25220%2522:%250A\n     \n@@ -437,30 +437,36 @@\n      return \n-%22---%22%0A\n+%2522---%2522%250A\n         if s\n@@ -482,13 +482,19 @@\n  == \n-%221%22:%0A\n+%25221%2522:%250A\n     \n@@ -510,33 +510,35 @@\n eturn self.sound\n-%0A\n+%250A\n         if self.\n@@ -550,13 +550,19 @@\n  == \n-%222%22:%0A\n+%25222%2522:%250A\n     \n@@ -578,33 +578,35 @@\n eturn self.sound\n-%0A\n+%250A\n         if self.\n@@ -618,13 +618,19 @@\n  == \n-%223%22:%0A\n+%25223%2522:%250A\n     \n@@ -654,17 +654,19 @@\n lf.sound\n-%0A\n+%250A\n         \n@@ -686,13 +686,19 @@\n  == \n-%224%22:%0A\n+%25224%2522:%250A\n     \n@@ -716,14 +716,20 @@\n urn \n-%22RIP%22%0A\n+%2522RIP%2522%250A\n     \n@@ -743,19 +743,27 @@\n urn \n-%22---%22%0A\n+%2522---%2522%250A\n     \n-%0A\n+%250A\n     \n@@ -780,17 +780,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -803,17 +803,19 @@\n rn f\n-%22\n+%2522\n species:\n %7Bsel\n@@ -810,17 +810,19 @@\n species:\n-%7B\n+%257B\n self.spe\n@@ -829,24 +829,28 @@\n cies\n-%7D\n+%257D\n , Age:\n-%7B\n+%257B\n self.age\n %7D, S\n@@ -849,17 +849,19 @@\n .age\n-%7D\n+%257D\n , Sound:\n %7Bsel\n@@ -860,9 +860,11 @@\n und:\n-%7B\n+%257B\n self\n@@ -877,16 +877,24 @@\n ound\n-%7D%22%0A\n+%257D%2522%250A\n     \n-%0A\n+%250A\n def \n@@ -900,17 +900,19 @@\n  main():\n-%0A\n+%250A\n         \n@@ -931,16 +931,26 @@\n mal(\n-%22%22, %22%22)%0A\n+%2522%2522, %2522%2522)%250A\n     \n@@ -964,17 +964,19 @@\n le True:\n-%0A\n+%250A\n         \n@@ -998,17 +998,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -1023,19 +1023,23 @@\n int(\n-%22$%22\n+%2522$%2522\n  + line)\n %0A   \n@@ -1034,17 +1034,19 @@\n  + line)\n-%0A\n+%250A\n         \n@@ -1063,13 +1063,17 @@\n list\n-%5Bstr%5D\n+%255Bstr%255D\n  = l\n@@ -1086,70 +1086,623 @@\n lit(\n-%22 %22)%0A%0A   \n+%2522 %2522)%250A%250A        %0A+@@ -767,21 +767,36 @@%250A  main():%250A-%25250A%250A   %250A-  %250A+# fora da classe!%25250A%250A     anim%250A@@ -815,20 +815,16 @@%250A %252522%252522, %252522%252522)%25250A%250A-\n     \n+%250A\n      \n-if args %5B0%5D == %22end%22:%0A              \n+whil%250A@@ -831,20 +831,16 @@%250A e True:%25250A%250A-    %250A         %250A@@ -863,28 +863,24 @@%250A t()%25250A        %250A- %250A-   %250A print(%252522$%252522 + %250A@@ -885,20 +885,16 @@%250A + line)%25250A%250A-    %250A         %250A@@ -940,20 +940,15 @@%250A     %250A- %250A-%0A    %0A+%250A%0A  if args%0A  %255B0%255D%0A@@ -340,94 +340,115 @@%0A args%0A- %255B0%255D == %2522end%2522:%250A      %0A+%250A- %250A %25255B0%25255D %250A@@ -973,22 +973,15 @@%250A%0A      %0A+%250A-%0A    %0A- %0A+%250A- %250A%0A\n   break%0A\n     \n@@ -1697,16 +1697,20 @@\n   break%0A\n+-%250A\n         \n@@ -1727,57 +1727,172 @@\n rgs \n-%5B0%5D\n+%255B0%255D\n  == \n-%22\n+%2522\n init\n-%22:%0A                if len(args) %3C 3:%0A\n+%2522:%250A    %0A+%25250A%250A-    %250A+%25250A%250A     %250A@@ -985,33 +985,32 @@%250A%0A         %0A if l%0A@@ -447,231 +447,200 @@%0A     %0A+el%0A if %0A-len(args) %253C 3:%250A\n     \n@@ -1901,33 +1901,35 @@\n           print(\n-%22\n+%2522\n fail: uso corret\n@@ -1935,33 +1935,47 @@\n to -\n-%3E\n+%253E\n  init \n-%3C\n+%253C\n especie\n-%3E %3Csom%3E%22)%0A\n+%253E %253Csom%253E%2522)%250A\n     \n@@ -1986,33 +1986,35 @@\n         continue\n-%0A\n+%250A\n             spec\n@@ -2028,12 +2028,18 @@\n rgs \n-%5B1%5D%0A\n+%255B1%255D%250A\n     \n@@ -2063,12 +2063,18 @@\n rgs \n-%5B2%5D%0A\n+%255B2%255D%250A\n     \n@@ -2109,16 +2109,251 @@\n ies,\n- sound)%0A\n+%0A+args%250A- %250A %25255B0%25255D == %252522init%252522:%25250A %250A@@ -1156,17 +1156,16 @@%250A s = args%250A- %250A %25255B1%25255D%25250A    %250A@@ -1184,17 +1184,16 @@%250A d = args%250A- %250A %25255B2%25255D%25250A    %250A@@ -1233,36 +1233,32 @@%250A%0A  sound)%0A-%250A%250A%0A+%25250A%25250A\n %0A   \n@@ -2362,36 +2362,159 @@\n     \n+%0A\n    \n-elif args %5B0%5D\n+  %0A@@ -627,35 +627,41 @@%0A d)%25250A%25250A        %0A-   %0A+%250A- %250A-   %250A%0A  elif args %255B0%255D =%0A@@ -659,140 +659,122 @@%0A rgs %0A-%255B0%255D\n  == \n-%22\n+%2522\n show\n-%22:%0A\n+%2522:%250A\n     \n@@ -2538,17 +2538,19 @@\n (animal)\n-%0A\n+%250A\n         \n@@ -2549,25 +2549,27 @@\n             \n-%0A\n+%250A\n             \n@@ -2581,23 +2581,33 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n-%22\n+%2522\n grow\n-%22:%0A\n+%2522:%250A\n     \n@@ -2635,36 +2635,214 @@\n gs) \n-%3C 2:%0A                \n+%253C 2:%250A%0A+%25255B0%25255D ==%250A@@ -1250,17 +1250,16 @@%250A lif args%250A- %250A %25255B0%25255D == %252522%250A@@ -1261,28 +1261,24 @@%250A  == %252522show%252522:%25250A%250A-%0A     %0A+%250A%0A     %0A@@ -785,68 +785,49 @@%0A     %0A-\n print(\n-%22\n+%2522\n fail\n@@ -2860,16 +2860,20 @@\n to -\n-%3E\n+%253E\n  grow \n-%3C\n+%253C\n incr\n@@ -2882,17 +2882,61 @@\n ento\n-%3E%22)%0A     \n+%253E%2522)%0A+ %250A@@ -1308,28 +1308,24 @@%0A %250A    %0A+%25250A%0A\n     \n@@ -2940,26 +2940,73 @@\n         \n+%0A\n   \n+   %0A@@ -826,109 +826,87 @@%0A     %0A+%250A-%0A     %0A-\n continue\n %0A       \n@@ -2997,17 +2997,19 @@\n continue\n-%0A\n+%250A\n         \n@@ -3036,13 +3036,19 @@\n args\n-%5B1%5D)%0A\n+%255B1%255D)%250A\n     \n@@ -3082,33 +3082,161 @@\n ent)\n-%0A%0A        \n+%250A%250A%0A+%250A elif args%25255B0%25255D%250A@@ -1332,28 +1332,24 @@%250A  == %252522grow%252522:%25250A%250A-%0A     %0A+%250A%0A     %0A-\n else:\n+%250A\n %0A     \n-    \n+%0A@@ -914,51 +914,46 @@%0A     %0A-\n    p\n@@ -3240,17 +3240,19 @@\n   print(\n-%22\n+%2522\n fail: co\n@@ -3273,15 +3273,77 @@\n cido\n-%22)%0A%0Amain()\n+%2522)%250A%250A%0A+%250A@@ -1598,9 +1598,8 @@%250A %25250A%25250A%0A main()%250A%0A+-%25250A%250A\n %0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-05_20-55-40",
+            "content": "@@ -751,12 +751,893 @@\n Sound%7D%22%0A    \n+%0Adef main():%0A        animal = Animal(%22%22, %22%22)%0A        while True:%0A            line: str = input()%0A            print(%22$%22 + line)%0A            args: list%5Bstr%5D = line.split(%22 %22)%0A%0A            if args %5B0%5D == %22end%22:%0A                break%0A            elif args %5B0%5D == %22init%22:%0A                if len(args) %3C 3:%0A                print(%22fail: uso correto -%3E init %3Cespecie%3E %3Csom%3E%22)%0A                continue%0A            species = args %5B1%5D%0A            sound = args %5B2%5D%0A            animal = Animal(species, sound)%0A%0A            elif args %5B0%5D == %22show%22:%0A                print(animal)%0A            %0A            elif args%5B0%5D == %22grow%22:%0A                if len(args) %3C 2:%0A                print(%22fail: uso correto -%3E grow %3Cincremento%3E%22)%0A                continue%0A            increment = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0Amain()%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-05_20-57-40",
+            "content": "@@ -759,79 +759,4 @@\n     \n-%0Adef main(): %0A    animal = Animal(%22%22, %22%22)%0A    while True:%0A        line: str\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-05_20-58-11",
+            "content": "@@ -834,40 +834,4 @@\n  str\n- = input()%0A        print(%22$%22 + line)\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-05_20-58-29",
+            "content": "@@ -870,46 +870,4 @@\n ine)\n-%0A        args: list%5Bstr%5D = line.split(%22 %22)\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-05_20-58-48",
+            "content": "@@ -912,61 +912,4 @@\n %22 %22)\n-%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-05_20-59-05",
+            "content": "@@ -969,27 +969,4 @@\n     \n-elif args%5B0%5D == %22init%22:\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-05_20-59-20",
+            "content": "@@ -957,16 +957,39 @@\n   break%0A        \n+elif args%5B0%5D == %22init%22:\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-05_20-59-26",
+            "content": "@@ -969,66 +969,4 @@\n     \n-%0A        elif args%5B0%5D == %22init%22:%0A            if len(args) %3C 3:\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-05_21-00-00",
+            "content": "@@ -1031,34 +1031,4 @@\n %3C 3:\n-%0A                print(%22fail%22)\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-05_21-00-18",
+            "content": "@@ -1059,43 +1059,6 @@\n fail\n-: uso correto -%3E init %3Cespecie%3E %3Csom%3E\n %22)\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-05_21-00-39",
+            "content": "@@ -1098,29 +1098,4 @@\n m%3E%22)\n-%0A                continue\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-05_21-00-45",
+            "content": "@@ -1123,107 +1123,4 @@\n inue\n-%0A            species = args%5B1%5D%0A            sound = args %5B2%5D%0A            animal = Animal(species, sound)\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-05_21-01-15",
+            "content": "@@ -1226,71 +1226,4 @@\n und)\n-%0A        %0A        elif args%5B0%5D == %22grow%22:%0A            print(animal)\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-05_21-01-37",
+            "content": "@@ -1293,97 +1293,4 @@\n mal)\n-%0A        %0A        elif args%5B0%5D == %22grow%22:%0A            if len(args) %3C 2:%0A                print\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-05_21-02-16",
+            "content": "@@ -1386,47 +1386,4 @@\n rint\n-(%22fail: uso correteo -%3E grow %3Cincremento%3E%22)\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-05_21-02-34",
+            "content": "@@ -1429,29 +1429,4 @@\n o%3E%22)\n-%0A                continue\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-05_21-02-40",
+            "content": "@@ -1454,160 +1454,4 @@\n inue\n-%0A            increment = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A        %0A        else:%0A            print(%22fail: comando desconhecido%22)%0A    %0Amain()\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-05_21-03-31",
+            "content": "@@ -1,116 +1,4 @@\n-#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A\n clas\n@@ -197,178 +197,8 @@\n t):%0A\n-        # se j%C3%A1 est%C3%A1 morto, n%C3%A3o envelhece mais%0A        if self.age %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            self.age = 4%0A            return%0A\n     \n@@ -237,33 +237,32 @@\n   if self.age %3E=\n- \n 4:%0A            p\n@@ -309,29 +309,8 @@\n     \n-        self.age = 4%0A\n %0A   \n@@ -351,16 +351,20 @@\n elf.\n-age\n+sound\n  == \n-0\n+%220%22\n :%0A  \n@@ -398,18 +398,16 @@\n     \n-el\n if self.\n age \n@@ -406,16 +406,20 @@\n elf.\n-age %3E= 4\n+sound == %221%22\n :%0A  \n@@ -439,58 +439,219 @@\n urn \n-%22RIP%22%0A        else:%0A            return self.sound%0A\n+self.sound%0A        if self.sound == %222%22:%0A            return self.sound%0A        if self.sound == %223%22:%0A            return self.sound%0A        if self.sound == %224%22:%0A            return %22RIP%22%0A        return %22---%22%0A    \n %0A   \n@@ -687,16 +687,24 @@\n eturn f%22\n+species:\n %7Bself.sp\n@@ -709,16 +709,21 @@\n species%7D\n+, Age\n :%7Bself.a\n@@ -729,24 +729,38 @@\n age%7D\n+, Sound\n :%7Bself.\n-s\n+makeS\n ound%7D%22%0A\n-%0A\n+    \n %0Adef\n@@ -767,16 +767,17 @@\n  main():\n+ \n %0A    ani\n@@ -957,16 +957,24 @@\n   break%0A\n+        \n %0A       \n@@ -1174,16 +1174,17 @@\n d = args\n+ \n %5B2%5D%0A    \n@@ -1223,16 +1223,24 @@\n  sound)%0A\n+        \n %0A       \n@@ -1261,10 +1261,10 @@\n == %22\n-sh\n+gr\n ow%22:\n@@ -1290,16 +1290,24 @@\n animal)%0A\n+        \n %0A       \n@@ -1396,24 +1396,25 @@\n : uso corret\n+e\n o -%3E grow %3Ci\n@@ -1524,25 +1524,24 @@\n rement)%0A\n-%0A\n         \n elif arg\n@@ -1536,71 +1536,8 @@\n     \n-elif args%5B0%5D == %22noise%22:%0A            print(animal.makeSound())%0A\n %0A   \n@@ -1599,13 +1599,15 @@\n o%22)%0A\n-%0A\n+    \n %0Amain()\n-%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-05_21-09-14",
+            "content": "@@ -105,8 +105,1654 @@\n pessoa%0A%0A\n+class Animal:%0A    def __init__(self, species: str, sound: str):%0A        self.species: str = species%0A        self.sound: str = sound%0A        self.age: int = 0%0A    %0A    def ageBy(self, increment: int):%0A        # se j%C3%A1 est%C3%A1 morto, n%C3%A3o envelhece mais%0A        if self.age %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            self.age = 4%0A            return%0A        self.age += increment%0A        if self.age %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            self.age = 4%0A%0A    def makeSound(self):%0A        if self.age == 0:%0A            return %22---%22%0A        elif self.age %3E= 4:%0A            return %22RIP%22%0A        else:%0A            return self.sound%0A%0A    def __str__(self):%0A        return f%22%7Bself.species%7D:%7Bself.age%7D:%7Bself.sound%7D%22%0A%0A%0Adef main():%0A    animal = Animal(%22%22, %22%22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        elif args%5B0%5D == %22init%22:%0A            if len(args) %3C 3:%0A                print(%22fail: uso correto -%3E init %3Cespecie%3E %3Csom%3E%22)%0A                continue%0A            species = args%5B1%5D%0A            sound = args%5B2%5D%0A            animal = Animal(species, sound)%0A%0A        elif args%5B0%5D == %22show%22:%0A            print(animal)%0A%0A        elif args%5B0%5D == %22grow%22:%0A            if len(args) %3C 2:%0A                print(%22fail: uso correto -%3E grow %3Cincremento%3E%22)%0A                continue%0A            increment = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A%0A        elif args%5B0%5D == %22noise%22:%0A            print(animal.makeSound())%0A%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0A%0Amain()%0A\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-10-05_21-11-55",
+            "content": "@@ -109,5 +109,4 @@\n oa%0A%0A\n-q\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-05_21-12-54",
+            "content": "@@ -109,231 +109,5 @@\n oa%0A%0A\n-%0A#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A%0A#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A%0A\n+q\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-05_21-13-40",
+            "content": "@@ -1,30 +1,339 @@\n-class Animal:%0A    def __init__\n+#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A%0A#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A%0A#calma eu to testando uma coisa pelo amor de deus nao me der um murro sena, adoro voce, to ajudando uma pessoa%0A%0A%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-05_21-15-26",
+            "content": "class Animal:\n    def __init__",
+            "lines": "2"
+        }
+    ]
+}
